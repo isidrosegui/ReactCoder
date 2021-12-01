@@ -1,5 +1,7 @@
 import React from 'react'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
+import CartWidget from './CartWidget'
+
 const NabBar = () => {
     return (
         <div>
@@ -15,11 +17,13 @@ const NabBar = () => {
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.2">Indumentaria</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Paletas/Raquetas</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.4">Otro</NavDropdown.Item>
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>
+       
   </Container> 
+  <CartWidget/>
 </Navbar>
         </div>
     )
