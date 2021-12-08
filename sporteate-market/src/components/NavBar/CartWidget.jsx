@@ -1,6 +1,6 @@
 import React from 'react'
 import { Cart3 } from 'react-bootstrap-icons';
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
+import ItemListContainer from '../Item/ItemListContainer';
 
 
 function CartWidget() {

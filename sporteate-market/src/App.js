@@ -2,13 +2,17 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import ItemCount from './components/ItemCount/ItemCount';
+
+import ItemListContainer from './components/Item/ItemListContainer';
+
+
+
 
 function App() {
   return (
     <>
       <NavBar/>
-      <ItemCount stock = "5" ></ItemCount>
+      <ItemListContainer productos = {{productos}} ></ItemListContainer>
     </>
   );
 }
