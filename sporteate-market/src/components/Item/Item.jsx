@@ -1,14 +1,27 @@
 import React from 'react'
-import { Image } from 'react-bootstrap'
-import ItemCount from '../ItemCount/ItemCount'
+import { Image, Card } from 'react-bootstrap'
+import ItemCount from './ItemCount'
 
-function Item({productos}) {
+function Item({producto}) {
     return (
-        <div>
-            <h1>{productos.name}</h1>
-            <h3>{productos.description}</h3>
-            <ItemCount></ItemCount>
+        <div className='row'>
+        <div className='col-md-4'></div>
+        <div className='col-md-4'>
+            <Card key={producto.id} style={{ width: '18rem' }}>
+           
+            <Card.Body>
+            <Card.Title>{producto.name}</Card.Title>
+            <Card.Img  variant="top" src={producto.imagen} />
+            <Card.Text>
+                {producto.description}
+            </Card.Text>
+            <ItemCount/>
+            </Card.Body>
+            </Card>
         </div>
+        <div className='col-md-4'></div>
+        </div>
+     
     )
 }
 

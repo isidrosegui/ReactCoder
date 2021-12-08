@@ -3,6 +3,7 @@ import React from 'react'
 import { FormControl, InputGroup } from 'react-bootstrap'
 import NumericInput from 'react-numeric-input';
 import { useState, useEffect } from 'react';
+
 function ItemCount({stock}) {
 let cantidad = 1;    
     const [cantEnCarro, setcantEnCarro] = useState(cantidad = 0);
@@ -22,12 +23,11 @@ let cantidad = 1;
         <>
            
             <div  className='row' style={{marginTop:'10px'}}>
-                <div className='col-6'><h1>En Carro: {cantEnCarro}</h1></div>
-                <div className='col-3'>
+                <div className='col-12'>
                     <NumericInput  mobile strict className="form-control" style={{width: '200px'}} max = {stock} min = {0}
                     defaultValue = {1}  onChange={(value) => setCantidad(value)}/>
                 </div>
-                <div className='col-2'>
+                <div className='col-12'>
                 <Button className='form-control'  onClick={addToCart}>Agregar al Carrito</Button>
                 </div>
             </div>
