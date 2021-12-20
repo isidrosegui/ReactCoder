@@ -1,10 +1,8 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
-import ItemCount from './ItemCount'
-import { Image } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 import { getFetch } from '../Helpers/getFetch'
-
+import ItemDetail from './ItemDetail'
 
 function ItemDetailContainer() {
     const{prod_id} = useParams()
@@ -25,14 +23,14 @@ function ItemDetailContainer() {
     return (
         <>
          'Estoy en el ItemDetailContainer del prod' {prod_id}
-        <div className ='row'>
-            <div className ='col-7'>
-                <Image src={producto.imagen}  ></Image>
-            </div>
-            <div className ='col-5'>
-                <ItemCount/>
-            </div>
-        </div>
+        
+            {   loading ? 
+                <h2>...Cargando</h2>
+                :
+                <ItemDetail producto = {producto} />
+            }
+          
+          
         </>
     )
 }

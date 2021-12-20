@@ -27,6 +27,7 @@ function App() {
             exact path='/detalle/:prod_id' 
             element={<ItemDetailContainer/>}
           />
+          
         </Routes>
       </center>
     </BrowserRouter>

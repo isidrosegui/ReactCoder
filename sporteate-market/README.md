@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+Aca poner: explicacion del proyecto, que librerias utilice, y algunos detalles mas que parezcan relevantes BUSCAR EDITOR MD (markdown).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
