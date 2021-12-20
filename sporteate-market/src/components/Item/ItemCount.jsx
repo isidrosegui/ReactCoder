@@ -1,6 +1,6 @@
 import Button from '@restart/ui/esm/Button'
 import React from 'react'
-import { FormControl, InputGroup } from 'react-bootstrap'
+import { FormControl, InputGroup, Row, Col } from 'react-bootstrap'
 import NumericInput from 'react-numeric-input';
 import { useState, useEffect } from 'react';
 
@@ -20,18 +20,26 @@ let cantidad = 1;
     }
 
     return (
-        <>
+        
            
-            <div  className='row' style={{marginTop:'10px'}}>
-                <div className='col-12'>
+            <Row style={{marginTop:'10px'}}>
+                <Col className='col-3'>
+                </Col>
+                <Col className='col-6'>
                     <NumericInput  mobile strict className="form-control" style={{width: '200px'}} max = {stock} min = {0}
                     defaultValue = {1}  onChange={(value) => setCantidad(value)}/>
-                </div>
-                <div className='col-12'>
-                <Button className='form-control'  onClick={addToCart}>Agregar al Carrito</Button>
-                </div>
-            </div>
-        </>
+                </Col>            
+                <Col className='col-3'>
+                </Col>
+                <Col className='col-3'>
+                </Col>
+                <Col className='col-6'>
+                    <Button className='form-control'  onClick={addToCart}>Agregar al Carrito</Button>
+                </Col>
+                <Col className='col-3'>
+                </Col>
+            </Row>
+        
     )
 }
 

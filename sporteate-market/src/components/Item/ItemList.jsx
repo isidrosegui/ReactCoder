@@ -5,7 +5,10 @@ import Item from './Item';
 function ItemList({productos}) {
     return (
         <>
-         { productos.map((prod) => <Item producto = {prod}/>) }
+        <br/>
+        <div className='row'>
+         { productos.map((prod) => <Item key={prod.id} producto = {prod}/>) }
+         </div>
         </>
     )
 }

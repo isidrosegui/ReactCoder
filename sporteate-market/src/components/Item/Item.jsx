@@ -4,9 +4,9 @@ import ItemCount from './ItemCount'
 
 function Item({producto}) {
     return (
-        <div className='row'>
-        <div className='col-md-4'></div>
-        <div className='col-md-4'>
+        
+        
+        <div className='col-md-3' style={{marginBottom:'10px'}}>
             <Card key={producto.id} style={{ width: '18rem' }}>
            
             <Card.Body>
@@ -15,12 +15,13 @@ function Item({producto}) {
             <Card.Text>
                 {producto.description}
             </Card.Text>
-            <ItemCount/>
+                <Card.Link href={`/detalle/${producto.id}`}>Ver Detalle</Card.Link>
+          
             </Card.Body>
             </Card>
         </div>
-        <div className='col-md-4'></div>
-        </div>
+        
+        
      
     )
 }

@@ -2,19 +2,35 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemListContainer from './components/Item/ItemListContainer';
-
-
-
+import Home from './components/Home/Home';
+import ItemDetailContainer from './components/Item/ItemDetailContainer';
+import CartContext from './context/CartContext';
 
 function App() {
   return (
-    <>
-      <NavBar/>
-      <ItemListContainer/>
-      
-    </>
+   // <CartContext.Provider value= {{productos}}>
+    <BrowserRouter>
+      <center>
+        <NavBar/>
+        <Routes>
+          <Route 
+            exact path='/' 
+            element={<ItemListContainer/>}
+          />
+          <Route 
+            exact path='/categoria/:cat_id' 
+            element={<ItemListContainer/>}
+          />
+          <Route 
+            exact path='/detalle/:prod_id' 
+            element={<ItemDetailContainer/>}
+          />
+        </Routes>
+      </center>
+    </BrowserRouter>
+   // </CartContext.Provider>  
   );
 }
 

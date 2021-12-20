@@ -1,0 +1,9 @@
+[
+
+    { "id": 1, "name":"Pantalon Adidas", "description": "Pantalon largo Adidas","categoria_id": 1, "categoria":"Indumentaria Deportiva", "stock": 5, "imagen":"../img/pantalon Adidas.png" },
+    { "id": 2, "name":"Pantalón Largo Deportivo", "description": "Pantalón Largo Deportivo Nike","categoria_id": 1 , "categoria":"Indumentaria Deportiva", "stock": 10, "imagen":"../img/pantalon Nike.png" },
+    { "id": 3, "name":"Raqueta Tenis Head", "description": "Raqueta de tenis Head","categoria_id": 2 , "categoria":"Insumos Deportivos", "stock": 4, "imagen":"../img/raqueta Tenis.png" },
+    { "id": 4, "name":"Tubo Pelotas de Tenis", "description": "Tubo de Pelotas de Tenis Penn X 3","categoria_id": 1, "categoria":"Insumos Deportivos", "stock": 20, "imagen":"../img/pelota Tenis.png"  },
+    { "id": 5, "name":"Pesas de 1 Kg", "description": "Pesas plasticas de 1kg","categoria_id": 1, "categoria":"Insumos Deportivos", "stock": 20, "imagen":"../img/PesaPlastica.png"  },
+    { "id": 6, "name":"Paleta de Padel", "description": "Paleta de Padel","categoria_id": 1, "categoria":"Insumos Deportivos", "stock": 20, "imagen":"../img/PaletaPadel.jpg"  }
+ ]
