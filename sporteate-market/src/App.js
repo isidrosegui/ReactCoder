@@ -7,6 +7,7 @@ import ItemListContainer from './components/Item/ItemListContainer';
 import Home from './components/Home/Home';
 import ItemDetailContainer from './components/Item/ItemDetailContainer';
 import CartContext from './context/CartContext';
+import { CartContainer } from './components/Cart/CartContainer';
 
 function App() {
   return (
@@ -27,7 +28,10 @@ function App() {
             exact path='/detalle/:prod_id' 
             element={<ItemDetailContainer/>}
           />
-          
+           <Route 
+            exact path='/cart' 
+            element={<CartContainer/>}
+          />
         </Routes>
       </center>
     </BrowserRouter>
